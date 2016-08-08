@@ -11,6 +11,8 @@ Attention: the Java Vecsion has to be 1.8 / 8
 
 e=PhysicsGameLinux
 p=/home/maxi/swift-3.0/usr/bin
+
+Change "pathToWorkingDirectory"
 */
 import Foundation
 
@@ -20,4 +22,6 @@ import PackageDescription
 let package = Package(
 	name: "PhysicsGameLinux"
 )
+
+let pathToWorkingDirectory = "/home/maxi/Documents/PhysicsGameLinux/"
 //#endif
