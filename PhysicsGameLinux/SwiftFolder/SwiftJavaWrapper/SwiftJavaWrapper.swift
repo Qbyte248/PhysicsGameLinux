@@ -33,10 +33,14 @@ public class SwiftJavaWrapper {
 	}
 
 	var charBuffer = [Character]()
-
+	
+	func updateBuffer() {
+		self.charBuffer += Array(self.read().characters)
+	}
+	
 	func readChar() -> Character? {
 		if charBuffer.isEmpty {
-			//self.charBuffer += Array(self.read().characters)
+			return nil
 		}
 		return charBuffer.removeFirst()
 	}
