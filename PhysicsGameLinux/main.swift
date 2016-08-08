@@ -10,7 +10,7 @@ import Foundation
 
 print("Hello, World!")
 
-let pathToWorkingDirectory = "/home/maxi/Documents/PhysicsGameLinux"
+let pathToWorkingDirectory = "/home/maxi/Documents/PhysicsGameLinux/"
 
 func shell(_ launchPath: String = "/usr/bin/env", args: String...) {
 	let task = Task()
