@@ -35,7 +35,7 @@ Stream.error = Stream.input
 //shell(args: "java", "-cp", pathToWorkingDirectory, "PhysicsGame/Java/WorkaroundStreamer", command.convertToString())
 
 
-//var distr = CommandDistributor(inputStream: Stream.input!)
+var distr = CommandDistributor(inputStream: Stream.input!)
 
 
 class Interpreter: CommandInterpreter {
@@ -57,7 +57,7 @@ class Interpreter: CommandInterpreter {
 
 }
 
-//distr.addCommandInterpreter(Interpreter())
+distr.addCommandInterpreter(Interpreter())
 
 /*
 DispatchQueue.global().async {
@@ -75,6 +75,7 @@ while Program.isRunning {
 	run()
 	world.update(time: time)
 	world.repaint()
+	distr.run()
 }
 
 print("finished Swift")
