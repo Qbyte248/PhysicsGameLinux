@@ -32,7 +32,7 @@ public class CommandDistributor {
 		self.inputStream = inputStream;
 
 		// start thread
-		self.start();
+		//self.start();
 	}
 
 	public func start() {
