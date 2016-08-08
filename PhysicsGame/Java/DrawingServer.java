@@ -197,6 +197,7 @@ public class DrawingServer extends JComponent implements CommandInterpreter {
 				
 			case Protocol.Client.clear:
 				drawables.clear();
+				sendInfo(); // moved for better performance
 				break;
 			case Protocol.Client.repaint:
 				String alwaysString = command.getParameterValueForKey(Protocol.Key.always);
@@ -214,7 +215,6 @@ public class DrawingServer extends JComponent implements CommandInterpreter {
 		if (alwaysRepaint) {
 			this.repaint();
 		}
-		sendInfo();
 	}
 	
 	public void sendInfo() {
