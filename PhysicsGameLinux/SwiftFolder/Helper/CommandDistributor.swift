@@ -73,12 +73,14 @@ public class CommandDistributor {
 		commandInterpreters.append(commandInterpreter);
 	}
 
-
+	var commandString = ""
+	
 	public func run() {
-
-		var commandString = "";
+		
 		print("started command interpreter")
-
+		
+		inputStream.updateBuffer()
+		
 		// !!! can throw IOException
 		while let c = inputStream.readChar() {
 
@@ -128,12 +130,13 @@ public class CommandDistributor {
 		}
 
 		//DispatchQueue.main.sync {
-
+			/*
 			commandInterpreters.forEach{
 				$0.willFinishInterpretingCommands();
 			}
 
 			commandInterpreters.removeAll()
+			*/
 		//}
 	}
 
