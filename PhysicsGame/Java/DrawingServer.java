@@ -23,9 +23,9 @@ import javax.swing.JPanel;
 
 import java.awt.geom.Line2D;
 import java.awt.Graphics2D;
-import java.awt.event.*;
+import java.awt.MouseInfo;
 
-public class DrawingServer extends JComponent implements CommandInterpreter, MouseMotionListener {
+public class DrawingServer extends JComponent implements CommandInterpreter {
 	public static void main(String[] args) {
 		//System.out.println("Hello World");
 		
@@ -78,36 +78,12 @@ public class DrawingServer extends JComponent implements CommandInterpreter, Mou
 			}
 		});
 		
-		testFrame.addMouseMotionListener(this);
-		
 		buttonsPanel.add(newLineButton);
 		buttonsPanel.add(clearButton);
 		testFrame.getContentPane().add(buttonsPanel, BorderLayout.SOUTH);
 		
 		testFrame.pack();
 		testFrame.setVisible(true);
-	}
-	
-	@Override
-	public void mouseDragged(MouseEvent e) {
-		try {
-			Command command = new Command(Protocol.Server.mousePosition);
-			command.addParameter(Protocol.Key.mousePosition,
-								 new Vector(e.getX(), e.getY()).convertToString());
-			
-			command.sendWithOutputStream(System.out);
-		} catch (Exception ejkdshfksdjkj) {}
-		
-	}
-	@Override
-	public void mouseMoved(MouseEvent e) {
-		try {
-			Command command = new Command(Protocol.Server.mousePosition);
-			command.addParameter(Protocol.Key.mousePosition,
-								 new Vector(e.getX(), e.getY()).convertToString());
-			
-			command.sendWithOutputStream(System.out);
-		} catch (Exception ekjkjhjkh) {}
 	}
 	
 	@Override
@@ -237,6 +213,16 @@ public class DrawingServer extends JComponent implements CommandInterpreter, Mou
 		
 		if (alwaysRepaint) {
 			this.repaint();
+		}
+		sendInfo();
+	}
+	
+	public void sendInfo() {
+		try {
+			Command command = new Command(Protocol.Server.mousePosition);
+			command.addParameter(Protocol.Key.mousePosition, new Vector(MouseInfo.getPointerInfo().getLocation().x, MouseInfo.getPointerInfo().getLocation().y).convertToString());
+			command.sendWithOutputStream(System.out);
+		} catch (Exception e) {
 		}
 	}
 	
