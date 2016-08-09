@@ -8,6 +8,7 @@
 
 import Foundation
 
+let pathToWorkingDirectory = "/Users/Maxi/Documents/Developer/PhysicsGameLinux"
 
 var item = Item(position: Point(x: 20, y: 100))
 
