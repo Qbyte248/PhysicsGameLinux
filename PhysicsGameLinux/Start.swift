@@ -88,17 +88,45 @@ func setup() {
 	itemX.velocity.x = 10
 	world.addItem(itemX)
 
-    var floor = Block(position: Point(x: 0, y: 0),
-				      size: Size(1000, 20),
+    var floor = Block(position: Point(x: -10000, y: -100),
+				      size: Size(20000, 100 + 20),
 			          color: Color(red: 1, green: 0, blue: 1, alpha: 1))
 	world.addBlock(floor)
+	
+	let block1 = Block(position: Point(x: 400, y: 20),
+	                   size: Size(50, 100),
+	                   color: Color(red: 0, green: 1, blue: 1, alpha: 1))
+	world.addBlock(block1)
+	
+	
+	var itemY = Item(position: Point(x: 500, y: 100),
+	                 size: Size(100, 200),
+	                 color: Color(red: 1, green: 1, blue: 0, alpha: 1),
+	                 friction: 1.0)
+	world.addItem(itemY)
+	
+	var distance = 400.0
+	var size = Size(50, 100)
+	
+	for x in 1...20 {
+		var block = Block(position: Point(x: Double(x) * distance, y: 20 - 100),
+		                  size: size,
+		                  color: Color(red: 0, green: 1, blue: 1, alpha: 1))
+		world.addBlock(block)
+		
+		var item = Item(position: Point(x: Double(x) * distance, y: 20),
+		                size: size,
+		                color: Color(red: 0, green: 1, blue: 1, alpha: 1),
+		                friction: 20.0)
+		world.addItem(item)
+	}
 
 }
 
 var itemX = Item(position: Point(x: 100, y: 100))
 
 func run() {
-
+	world.position.x = 300 - itemX.position.x
 }
 
 
@@ -108,14 +136,43 @@ func mouseMoved(position: Vector2D) {
 	var x = 1280.0
 	var y = 720.0
 	
-	var speed = 500.0
+	var speed = 1000.0
+	var jumpSpeed = 700.0
 	
+	itemX.velocity.x = position.x - x/2
+	/*
 	if position.x < x/2 {
 		// mouse on left side
 		itemX.velocity.x = -speed
 	} else {
 		// mouse on right side
 		itemX.velocity.x = speed
+	}*/
+	
+	if position.y < y/2 {
+		itemX.velocity.y = jumpSpeed
+		itemX.position.y += 1
+	}
+}
+
+extension Item {
+	
+	convenience init(position: Point,
+	     size: Size,
+	     color: Color,
+	     friction: Double = 0.0) {
+		
+		var texture = Texture()
+		texture.append(.color(color))
+		texture.append(.rectangle(Rectangle(
+			origin: Vector2D(0, 0),
+			size: size)))
+		
+		self.init(position: position,
+		          texture: texture)
+		
+		self.physicsBody.size = size
+		self.physicsBody.friction = friction
 	}
 }
 

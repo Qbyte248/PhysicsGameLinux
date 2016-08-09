@@ -38,7 +38,7 @@ final class World {
 			}
 		}
 		for item in items {
-			item.update(time: time, forceField: { _ in Vector2D(0, -1000) })
+			item.update(time: time, forceField: { _ in Vector2D(0, -4000) })
 		}
 
 	}

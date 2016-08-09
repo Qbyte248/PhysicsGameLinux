@@ -50,11 +50,11 @@ struct PhysicsBody {
 		
 		switch contactSide.side {
 		case .left:
-			//self.position.x += contactSide.depth
+			self.position.x += contactSide.depth - 1
 			self.force.x += force
 			//self.velocity.x = 0
 		case .right:
-			//self.position.x -= contactSide.depth
+			self.position.x -= contactSide.depth - 1
 			self.force.x -= force
 			//self.velocity.x = 0
 		case .lower:
