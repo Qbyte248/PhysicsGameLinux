@@ -62,7 +62,7 @@ public struct Command {
 		}
 
 		
-		var command = try Command("");
+		var command = try Command(" ");
 		
 		// set commandString
 		guard let commandStringObject = Helper.castToString(arguments.get(0)) else {

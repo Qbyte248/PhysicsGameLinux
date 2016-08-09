@@ -77,14 +77,10 @@ public class CommandDistributor {
 	
 	public func run() {
 		
-		print("started command interpreter")
-		
 		inputStream.updateBuffer()
 		
 		// !!! can throw IOException
 		while let c = inputStream.readChar() {
-
-			//print(c, terminator: "")
 
 			// execute in main.sync
 			//DispatchQueue.global().sync {
@@ -108,11 +104,11 @@ public class CommandDistributor {
 				}
 
 				if (Command.stringEndsWithEndDelimiter(commandString)) {
-
+					
 					do {
 						// !!! can throw IllegalArgumentException
 						let command = try Command.fromString(commandString)
-
+						
 						// pass command to all commandInterpreters
 						for commandInterpreter in self.commandInterpreters {
 							commandInterpreter.interpretCommand(command);
