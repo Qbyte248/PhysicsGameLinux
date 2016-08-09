@@ -66,7 +66,7 @@ public class DrawingServer extends JComponent implements CommandInterpreter {
 		// comp == this
 		// repaint() calls paintComponent()
 		
-		this.setPreferredSize(new Dimension(320, 200));
+		this.setPreferredSize(new Dimension(800, 500));
 		testFrame.getContentPane().add(this, BorderLayout.CENTER);
 		JPanel buttonsPanel = new JPanel();
 		JButton newLineButton = new JButton("New Line");

@@ -103,6 +103,19 @@ func run() {
 
 
 func mouseMoved(position: Vector2D) {
+	print(position)
 	
+	var x = 1280.0
+	var y = 720.0
+	
+	var speed = 500.0
+	
+	if position.x < x/2 {
+		// mouse on left side
+		itemX.velocity.x = -speed
+	} else {
+		// mouse on right side
+		itemX.velocity.x = speed
+	}
 }
 
