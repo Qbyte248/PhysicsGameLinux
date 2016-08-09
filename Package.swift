@@ -16,11 +16,11 @@ Change "pathToWorkingDirectory" in main.swift
 */
 import Foundation
 
-//#if os(Linux)
+#if os(Linux)
 import PackageDescription
 
 let package = Package(
 	name: "PhysicsGameLinux"
 )
 
-//#endif
+#endif

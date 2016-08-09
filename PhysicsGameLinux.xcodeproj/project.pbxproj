@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5462C9B61D595B7600318AB2 /* DrawFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5462C98F1D595B5600318AB2 /* DrawFunctions.swift */; };
+		5462C9B71D595B7600318AB2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5462C9901D595B5600318AB2 /* main.swift */; };
+		5462C9B81D595B7600318AB2 /* Program.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5462C9911D595B5600318AB2 /* Program.swift */; };
+		5462C9B91D595B7600318AB2 /* Start.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5462C9921D595B5600318AB2 /* Start.swift */; };
+		5462C9BA1D595B7C00318AB2 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5462C9951D595B5600318AB2 /* Color.swift */; };
+		5462C9BB1D595B7C00318AB2 /* Drawable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5462C9961D595B5600318AB2 /* Drawable.swift */; };
+		5462C9BC1D595B7C00318AB2 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5462C9971D595B5600318AB2 /* Line.swift */; };
+		5462C9BD1D595B7C00318AB2 /* Polygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5462C9981D595B5600318AB2 /* Polygon.swift */; };
+		5462C9BE1D595B7C00318AB2 /* Rectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5462C9991D595B5600318AB2 /* Rectangle.swift */; };
+		5462C9BF1D595B7C00318AB2 /* Vector2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5462C99A1D595B5600318AB2 /* Vector2D.swift */; };
+		5462C9C01D595B8200318AB2 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5462C99C1D595B5600318AB2 /* Command.swift */; };
+		5462C9C11D595B8200318AB2 /* CommandDistributor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5462C99D1D595B5600318AB2 /* CommandDistributor.swift */; };
+		5462C9C21D595B8200318AB2 /* CommandInterpreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5462C99E1D595B5600318AB2 /* CommandInterpreter.swift */; };
+		5462C9C31D595B8200318AB2 /* CommandReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5462C99F1D595B5600318AB2 /* CommandReader.swift */; };
+		5462C9C41D595B8200318AB2 /* CommandSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5462C9A01D595B5600318AB2 /* CommandSender.swift */; };
+		5462C9C51D595B8200318AB2 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5462C9A11D595B5600318AB2 /* Errors.swift */; };
+		5462C9C61D595B8200318AB2 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5462C9A21D595B5600318AB2 /* Helper.swift */; };
+		5462C9C71D595B8200318AB2 /* Lens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5462C9A31D595B5600318AB2 /* Lens.swift */; };
+		5462C9C81D595B8200318AB2 /* ObjectConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5462C9A41D595B5600318AB2 /* ObjectConvertible.swift */; };
+		5462C9C91D595B8200318AB2 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5462C9A51D595B5600318AB2 /* Parser.swift */; };
+		5462C9CA1D595B8200318AB2 /* ParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5462C9A61D595B5600318AB2 /* ParserTest.swift */; };
+		5462C9CB1D595B8200318AB2 /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5462C9A71D595B5600318AB2 /* Protocol.swift */; };
+		5462C9CC1D595B8200318AB2 /* TestCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5462C9A81D595B5600318AB2 /* TestCommand.swift */; };
+		5462C9CD1D595B8200318AB2 /* Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5462C9A91D595B5600318AB2 /* Vector.swift */; };
+		5462C9CE1D595B8200318AB2 /* Wrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5462C9AA1D595B5600318AB2 /* Wrapper.swift */; };
+		5462C9CF1D595B8600318AB2 /* SwiftJavaWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5462C9AC1D595B5600318AB2 /* SwiftJavaWrapper.swift */; };
+		5462C9D01D595B8C00318AB2 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5462C9AE1D595B5600318AB2 /* Block.swift */; };
+		5462C9D11D595B8C00318AB2 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5462C9AF1D595B5600318AB2 /* Item.swift */; };
+		5462C9D21D595B8C00318AB2 /* PhysicsBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5462C9B01D595B5600318AB2 /* PhysicsBody.swift */; };
+		5462C9D31D595B8C00318AB2 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5462C9B11D595B5600318AB2 /* Point.swift */; };
+		5462C9D41D595B8C00318AB2 /* Texture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5462C9B21D595B5600318AB2 /* Texture.swift */; };
+		5462C9D51D595B8C00318AB2 /* TextureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5462C9B31D595B5600318AB2 /* TextureModel.swift */; };
+		5462C9D61D595B8C00318AB2 /* World.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5462C9B41D595B5600318AB2 /* World.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		541D0D191D57507E00F2E295 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		541D0D1B1D57507E00F2E295 /* PhysicsGame */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PhysicsGame; sourceTree = BUILT_PRODUCTS_DIR; };
+		5462C95D1D595B5600318AB2 /* Drawable.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = Drawable.class; sourceTree = "<group>"; };
+		5462C95E1D595B5600318AB2 /* Drawable.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = Drawable.java; sourceTree = "<group>"; };
+		5462C95F1D595B5600318AB2 /* DrawableObject.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = DrawableObject.class; sourceTree = "<group>"; };
+		5462C9601D595B5600318AB2 /* DrawableObject.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = DrawableObject.java; sourceTree = "<group>"; };
+		5462C9611D595B5600318AB2 /* Line.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = Line.class; sourceTree = "<group>"; };
+		5462C9621D595B5600318AB2 /* Line.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = Line.java; sourceTree = "<group>"; };
+		5462C9631D595B5600318AB2 /* MyColor.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = MyColor.class; sourceTree = "<group>"; };
+		5462C9641D595B5600318AB2 /* MyColor.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = MyColor.java; sourceTree = "<group>"; };
+		5462C9651D595B5600318AB2 /* MyImage.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = MyImage.class; sourceTree = "<group>"; };
+		5462C9661D595B5600318AB2 /* MyImage.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = MyImage.java; sourceTree = "<group>"; };
+		5462C9671D595B5600318AB2 /* Polygon.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = Polygon.class; sourceTree = "<group>"; };
+		5462C9681D595B5600318AB2 /* Polygon.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = Polygon.java; sourceTree = "<group>"; };
+		5462C9691D595B5600318AB2 /* Rectangle.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = Rectangle.class; sourceTree = "<group>"; };
+		5462C96A1D595B5600318AB2 /* Rectangle.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = Rectangle.java; sourceTree = "<group>"; };
+		5462C96B1D595B5600318AB2 /* Size.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = Size.class; sourceTree = "<group>"; };
+		5462C96C1D595B5600318AB2 /* Size.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = Size.java; sourceTree = "<group>"; };
+		5462C96D1D595B5600318AB2 /* Vector.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = Vector.class; sourceTree = "<group>"; };
+		5462C96E1D595B5600318AB2 /* Vector.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = Vector.java; sourceTree = "<group>"; };
+		5462C96F1D595B5600318AB2 /* DrawingServer$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = DrawingServer$1.class; sourceTree = "<group>"; };
+		5462C9701D595B5600318AB2 /* DrawingServer.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = DrawingServer.class; sourceTree = "<group>"; };
+		5462C9711D595B5600318AB2 /* DrawingServer.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = DrawingServer.java; sourceTree = "<group>"; };
+		5462C9731D595B5600318AB2 /* Command.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = Command.class; sourceTree = "<group>"; };
+		5462C9741D595B5600318AB2 /* Command.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = Command.java; sourceTree = "<group>"; };
+		5462C9751D595B5600318AB2 /* CommandDistributor.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = CommandDistributor.class; sourceTree = "<group>"; };
+		5462C9761D595B5600318AB2 /* CommandDistributor.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = CommandDistributor.java; sourceTree = "<group>"; };
+		5462C9771D595B5600318AB2 /* CommandInterpreter.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = CommandInterpreter.class; sourceTree = "<group>"; };
+		5462C9781D595B5600318AB2 /* CommandInterpreter.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = CommandInterpreter.java; sourceTree = "<group>"; };
+		5462C9791D595B5600318AB2 /* CommandReader.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = CommandReader.java; sourceTree = "<group>"; };
+		5462C97A1D595B5600318AB2 /* CommandSender.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = CommandSender.class; sourceTree = "<group>"; };
+		5462C97B1D595B5600318AB2 /* CommandSender.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = CommandSender.java; sourceTree = "<group>"; };
+		5462C97C1D595B5600318AB2 /* Helper.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = Helper.class; sourceTree = "<group>"; };
+		5462C97D1D595B5600318AB2 /* Helper.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = Helper.java; sourceTree = "<group>"; };
+		5462C97E1D595B5600318AB2 /* ObjectConvertible.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = ObjectConvertible.class; sourceTree = "<group>"; };
+		5462C97F1D595B5600318AB2 /* ObjectConvertible.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = ObjectConvertible.java; sourceTree = "<group>"; };
+		5462C9801D595B5600318AB2 /* Parser.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = Parser.class; sourceTree = "<group>"; };
+		5462C9811D595B5600318AB2 /* Parser.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = Parser.java; sourceTree = "<group>"; };
+		5462C9821D595B5600318AB2 /* ParserTest.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = ParserTest.java; sourceTree = "<group>"; };
+		5462C9831D595B5600318AB2 /* Protocol$Client.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = Protocol$Client.class; sourceTree = "<group>"; };
+		5462C9841D595B5600318AB2 /* Protocol$Key.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = Protocol$Key.class; sourceTree = "<group>"; };
+		5462C9851D595B5600318AB2 /* Protocol$Server.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = Protocol$Server.class; sourceTree = "<group>"; };
+		5462C9861D595B5600318AB2 /* Protocol.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = Protocol.class; sourceTree = "<group>"; };
+		5462C9871D595B5600318AB2 /* Protocol.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = Protocol.java; sourceTree = "<group>"; };
+		5462C9881D595B5600318AB2 /* TestCommand.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = TestCommand.java; sourceTree = "<group>"; };
+		5462C9891D595B5600318AB2 /* Wrapper.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = Wrapper.class; sourceTree = "<group>"; };
+		5462C98A1D595B5600318AB2 /* Wrapper.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = Wrapper.java; sourceTree = "<group>"; };
+		5462C98B1D595B5600318AB2 /* JavaSwiftWrapper.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = JavaSwiftWrapper.java; sourceTree = "<group>"; };
+		5462C98C1D595B5600318AB2 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		5462C98D1D595B5600318AB2 /* WorkaroundStreamer.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = WorkaroundStreamer.java; sourceTree = "<group>"; };
+		5462C98F1D595B5600318AB2 /* DrawFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawFunctions.swift; sourceTree = "<group>"; };
+		5462C9901D595B5600318AB2 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		5462C9911D595B5600318AB2 /* Program.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Program.swift; sourceTree = "<group>"; };
+		5462C9921D595B5600318AB2 /* Start.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Start.swift; sourceTree = "<group>"; };
+		5462C9951D595B5600318AB2 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		5462C9961D595B5600318AB2 /* Drawable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drawable.swift; sourceTree = "<group>"; };
+		5462C9971D595B5600318AB2 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		5462C9981D595B5600318AB2 /* Polygon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Polygon.swift; sourceTree = "<group>"; };
+		5462C9991D595B5600318AB2 /* Rectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rectangle.swift; sourceTree = "<group>"; };
+		5462C99A1D595B5600318AB2 /* Vector2D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vector2D.swift; sourceTree = "<group>"; };
+		5462C99C1D595B5600318AB2 /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		5462C99D1D595B5600318AB2 /* CommandDistributor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandDistributor.swift; sourceTree = "<group>"; };
+		5462C99E1D595B5600318AB2 /* CommandInterpreter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandInterpreter.swift; sourceTree = "<group>"; };
+		5462C99F1D595B5600318AB2 /* CommandReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandReader.swift; sourceTree = "<group>"; };
+		5462C9A01D595B5600318AB2 /* CommandSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandSender.swift; sourceTree = "<group>"; };
+		5462C9A11D595B5600318AB2 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		5462C9A21D595B5600318AB2 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		5462C9A31D595B5600318AB2 /* Lens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lens.swift; sourceTree = "<group>"; };
+		5462C9A41D595B5600318AB2 /* ObjectConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectConvertible.swift; sourceTree = "<group>"; };
+		5462C9A51D595B5600318AB2 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		5462C9A61D595B5600318AB2 /* ParserTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserTest.swift; sourceTree = "<group>"; };
+		5462C9A71D595B5600318AB2 /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
+		5462C9A81D595B5600318AB2 /* TestCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCommand.swift; sourceTree = "<group>"; };
+		5462C9A91D595B5600318AB2 /* Vector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vector.swift; sourceTree = "<group>"; };
+		5462C9AA1D595B5600318AB2 /* Wrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wrapper.swift; sourceTree = "<group>"; };
+		5462C9AC1D595B5600318AB2 /* SwiftJavaWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftJavaWrapper.swift; sourceTree = "<group>"; };
+		5462C9AE1D595B5600318AB2 /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
+		5462C9AF1D595B5600318AB2 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		5462C9B01D595B5600318AB2 /* PhysicsBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicsBody.swift; sourceTree = "<group>"; };
+		5462C9B11D595B5600318AB2 /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		5462C9B21D595B5600318AB2 /* Texture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Texture.swift; sourceTree = "<group>"; };
+		5462C9B31D595B5600318AB2 /* TextureModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextureModel.swift; sourceTree = "<group>"; };
+		5462C9B41D595B5600318AB2 /* World.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = World.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		541D0D181D57507E00F2E295 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		541D0D121D57507E00F2E295 = {
+			isa = PBXGroup;
+			children = (
+				5462C9B51D595B6300318AB2 /* PhysicsGameLinux */,
+				541D0D1C1D57507E00F2E295 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		541D0D1C1D57507E00F2E295 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				541D0D1B1D57507E00F2E295 /* PhysicsGame */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5462C95A1D595B5600318AB2 /* PhysicsGame */ = {
+			isa = PBXGroup;
+			children = (
+				5462C95B1D595B5600318AB2 /* Java */,
+			);
+			path = PhysicsGame;
+			sourceTree = "<group>";
+		};
+		5462C95B1D595B5600318AB2 /* Java */ = {
+			isa = PBXGroup;
+			children = (
+				5462C95C1D595B5600318AB2 /* Drawing */,
+				5462C96F1D595B5600318AB2 /* DrawingServer$1.class */,
+				5462C9701D595B5600318AB2 /* DrawingServer.class */,
+				5462C9711D595B5600318AB2 /* DrawingServer.java */,
+				5462C9721D595B5600318AB2 /* Helper */,
+				5462C98B1D595B5600318AB2 /* JavaSwiftWrapper.java */,
+				5462C98C1D595B5600318AB2 /* Test.swift */,
+				5462C98D1D595B5600318AB2 /* WorkaroundStreamer.java */,
+			);
+			path = Java;
+			sourceTree = "<group>";
+		};
+		5462C95C1D595B5600318AB2 /* Drawing */ = {
+			isa = PBXGroup;
+			children = (
+				5462C95D1D595B5600318AB2 /* Drawable.class */,
+				5462C95E1D595B5600318AB2 /* Drawable.java */,
+				5462C95F1D595B5600318AB2 /* DrawableObject.class */,
+				5462C9601D595B5600318AB2 /* DrawableObject.java */,
+				5462C9611D595B5600318AB2 /* Line.class */,
+				5462C9621D595B5600318AB2 /* Line.java */,
+				5462C9631D595B5600318AB2 /* MyColor.class */,
+				5462C9641D595B5600318AB2 /* MyColor.java */,
+				5462C9651D595B5600318AB2 /* MyImage.class */,
+				5462C9661D595B5600318AB2 /* MyImage.java */,
+				5462C9671D595B5600318AB2 /* Polygon.class */,
+				5462C9681D595B5600318AB2 /* Polygon.java */,
+				5462C9691D595B5600318AB2 /* Rectangle.class */,
+				5462C96A1D595B5600318AB2 /* Rectangle.java */,
+				5462C96B1D595B5600318AB2 /* Size.class */,
+				5462C96C1D595B5600318AB2 /* Size.java */,
+				5462C96D1D595B5600318AB2 /* Vector.class */,
+				5462C96E1D595B5600318AB2 /* Vector.java */,
+			);
+			path = Drawing;
+			sourceTree = "<group>";
+		};
+		5462C9721D595B5600318AB2 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				5462C9731D595B5600318AB2 /* Command.class */,
+				5462C9741D595B5600318AB2 /* Command.java */,
+				5462C9751D595B5600318AB2 /* CommandDistributor.class */,
+				5462C9761D595B5600318AB2 /* CommandDistributor.java */,
+				5462C9771D595B5600318AB2 /* CommandInterpreter.class */,
+				5462C9781D595B5600318AB2 /* CommandInterpreter.java */,
+				5462C9791D595B5600318AB2 /* CommandReader.java */,
+				5462C97A1D595B5600318AB2 /* CommandSender.class */,
+				5462C97B1D595B5600318AB2 /* CommandSender.java */,
+				5462C97C1D595B5600318AB2 /* Helper.class */,
+				5462C97D1D595B5600318AB2 /* Helper.java */,
+				5462C97E1D595B5600318AB2 /* ObjectConvertible.class */,
+				5462C97F1D595B5600318AB2 /* ObjectConvertible.java */,
+				5462C9801D595B5600318AB2 /* Parser.class */,
+				5462C9811D595B5600318AB2 /* Parser.java */,
+				5462C9821D595B5600318AB2 /* ParserTest.java */,
+				5462C9831D595B5600318AB2 /* Protocol$Client.class */,
+				5462C9841D595B5600318AB2 /* Protocol$Key.class */,
+				5462C9851D595B5600318AB2 /* Protocol$Server.class */,
+				5462C9861D595B5600318AB2 /* Protocol.class */,
+				5462C9871D595B5600318AB2 /* Protocol.java */,
+				5462C9881D595B5600318AB2 /* TestCommand.java */,
+				5462C9891D595B5600318AB2 /* Wrapper.class */,
+				5462C98A1D595B5600318AB2 /* Wrapper.java */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		5462C98E1D595B5600318AB2 /* PhysicsGameLinux */ = {
+			isa = PBXGroup;
+			children = (
+				5462C98F1D595B5600318AB2 /* DrawFunctions.swift */,
+				5462C9901D595B5600318AB2 /* main.swift */,
+				5462C9911D595B5600318AB2 /* Program.swift */,
+				5462C9921D595B5600318AB2 /* Start.swift */,
+				5462C9931D595B5600318AB2 /* SwiftFolder */,
+			);
+			path = PhysicsGameLinux;
+			sourceTree = "<group>";
+		};
+		5462C9931D595B5600318AB2 /* SwiftFolder */ = {
+			isa = PBXGroup;
+			children = (
+				5462C9941D595B5600318AB2 /* Drawing */,
+				5462C99B1D595B5600318AB2 /* Helper */,
+				5462C9AB1D595B5600318AB2 /* SwiftJavaWrapper */,
+				5462C9AD1D595B5600318AB2 /* World */,
+			);
+			path = SwiftFolder;
+			sourceTree = "<group>";
+		};
+		5462C9941D595B5600318AB2 /* Drawing */ = {
+			isa = PBXGroup;
+			children = (
+				5462C9951D595B5600318AB2 /* Color.swift */,
+				5462C9961D595B5600318AB2 /* Drawable.swift */,
+				5462C9971D595B5600318AB2 /* Line.swift */,
+				5462C9981D595B5600318AB2 /* Polygon.swift */,
+				5462C9991D595B5600318AB2 /* Rectangle.swift */,
+				5462C99A1D595B5600318AB2 /* Vector2D.swift */,
+			);
+			path = Drawing;
+			sourceTree = "<group>";
+		};
+		5462C99B1D595B5600318AB2 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				5462C99C1D595B5600318AB2 /* Command.swift */,
+				5462C99D1D595B5600318AB2 /* CommandDistributor.swift */,
+				5462C99E1D595B5600318AB2 /* CommandInterpreter.swift */,
+				5462C99F1D595B5600318AB2 /* CommandReader.swift */,
+				5462C9A01D595B5600318AB2 /* CommandSender.swift */,
+				5462C9A11D595B5600318AB2 /* Errors.swift */,
+				5462C9A21D595B5600318AB2 /* Helper.swift */,
+				5462C9A31D595B5600318AB2 /* Lens.swift */,
+				5462C9A41D595B5600318AB2 /* ObjectConvertible.swift */,
+				5462C9A51D595B5600318AB2 /* Parser.swift */,
+				5462C9A61D595B5600318AB2 /* ParserTest.swift */,
+				5462C9A71D595B5600318AB2 /* Protocol.swift */,
+				5462C9A81D595B5600318AB2 /* TestCommand.swift */,
+				5462C9A91D595B5600318AB2 /* Vector.swift */,
+				5462C9AA1D595B5600318AB2 /* Wrapper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		5462C9AB1D595B5600318AB2 /* SwiftJavaWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				5462C9AC1D595B5600318AB2 /* SwiftJavaWrapper.swift */,
+			);
+			path = SwiftJavaWrapper;
+			sourceTree = "<group>";
+		};
+		5462C9AD1D595B5600318AB2 /* World */ = {
+			isa = PBXGroup;
+			children = (
+				5462C9AE1D595B5600318AB2 /* Block.swift */,
+				5462C9AF1D595B5600318AB2 /* Item.swift */,
+				5462C9B01D595B5600318AB2 /* PhysicsBody.swift */,
+				5462C9B11D595B5600318AB2 /* Point.swift */,
+				5462C9B21D595B5600318AB2 /* Texture.swift */,
+				5462C9B31D595B5600318AB2 /* TextureModel.swift */,
+				5462C9B41D595B5600318AB2 /* World.swift */,
+			);
+			path = World;
+			sourceTree = "<group>";
+		};
+		5462C9B51D595B6300318AB2 /* PhysicsGameLinux */ = {
+			isa = PBXGroup;
+			children = (
+				5462C98E1D595B5600318AB2 /* PhysicsGameLinux */,
+				5462C95A1D595B5600318AB2 /* PhysicsGame */,
+			);
+			name = PhysicsGameLinux;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		541D0D5D1D5752B900F2E295 /* DrawingServer */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION) PhysicsGame/Java/$(TARGETNAME).java";
+			buildConfigurationList = 541D0D5E1D5752B900F2E295 /* Build configuration list for PBXLegacyTarget "DrawingServer" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/javac;
+			buildWorkingDirectory = "";
+			dependencies = (
+			);
+			name = DrawingServer;
+			passBuildSettingsInEnvironment = 1;
+			productName = JavaPhysicsGame;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		541D0D1A1D57507E00F2E295 /* PhysicsGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 541D0D221D57507E00F2E295 /* Build configuration list for PBXNativeTarget "PhysicsGame" */;
+			buildPhases = (
+				541D0D171D57507E00F2E295 /* Sources */,
+				541D0D181D57507E00F2E295 /* Frameworks */,
+				541D0D191D57507E00F2E295 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhysicsGame;
+			productName = PhysicsGame;
+			productReference = 541D0D1B1D57507E00F2E295 /* PhysicsGame */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		541D0D131D57507E00F2E295 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = MaHue;
+				TargetAttributes = {
+					541D0D1A1D57507E00F2E295 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = EBKJEHVQXB;
+						ProvisioningStyle = Automatic;
+					};
+					541D0D5D1D5752B900F2E295 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = EBKJEHVQXB;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 541D0D161D57507E00F2E295 /* Build configuration list for PBXProject "PhysicsGameLinux" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 541D0D121D57507E00F2E295;
+			productRefGroup = 541D0D1C1D57507E00F2E295 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				541D0D1A1D57507E00F2E295 /* PhysicsGame */,
+				541D0D5D1D5752B900F2E295 /* DrawingServer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		541D0D171D57507E00F2E295 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5462C9BD1D595B7C00318AB2 /* Polygon.swift in Sources */,
+				5462C9CC1D595B8200318AB2 /* TestCommand.swift in Sources */,
+				5462C9C21D595B8200318AB2 /* CommandInterpreter.swift in Sources */,
+				5462C9B91D595B7600318AB2 /* Start.swift in Sources */,
+				5462C9D11D595B8C00318AB2 /* Item.swift in Sources */,
+				5462C9B71D595B7600318AB2 /* main.swift in Sources */,
+				5462C9C51D595B8200318AB2 /* Errors.swift in Sources */,
+				5462C9C31D595B8200318AB2 /* CommandReader.swift in Sources */,
+				5462C9BE1D595B7C00318AB2 /* Rectangle.swift in Sources */,
+				5462C9D21D595B8C00318AB2 /* PhysicsBody.swift in Sources */,
+				5462C9BF1D595B7C00318AB2 /* Vector2D.swift in Sources */,
+				5462C9C61D595B8200318AB2 /* Helper.swift in Sources */,
+				5462C9CD1D595B8200318AB2 /* Vector.swift in Sources */,
+				5462C9CF1D595B8600318AB2 /* SwiftJavaWrapper.swift in Sources */,
+				5462C9CE1D595B8200318AB2 /* Wrapper.swift in Sources */,
+				5462C9D51D595B8C00318AB2 /* TextureModel.swift in Sources */,
+				5462C9B61D595B7600318AB2 /* DrawFunctions.swift in Sources */,
+				5462C9BB1D595B7C00318AB2 /* Drawable.swift in Sources */,
+				5462C9D61D595B8C00318AB2 /* World.swift in Sources */,
+				5462C9C71D595B8200318AB2 /* Lens.swift in Sources */,
+				5462C9C91D595B8200318AB2 /* Parser.swift in Sources */,
+				5462C9BA1D595B7C00318AB2 /* Color.swift in Sources */,
+				5462C9CA1D595B8200318AB2 /* ParserTest.swift in Sources */,
+				5462C9BC1D595B7C00318AB2 /* Line.swift in Sources */,
+				5462C9C11D595B8200318AB2 /* CommandDistributor.swift in Sources */,
+				5462C9CB1D595B8200318AB2 /* Protocol.swift in Sources */,
+				5462C9C81D595B8200318AB2 /* ObjectConvertible.swift in Sources */,
+				5462C9D41D595B8C00318AB2 /* Texture.swift in Sources */,
+				5462C9C01D595B8200318AB2 /* Command.swift in Sources */,
+				5462C9D31D595B8C00318AB2 /* Point.swift in Sources */,
+				5462C9D01D595B8C00318AB2 /* Block.swift in Sources */,
+				5462C9B81D595B7600318AB2 /* Program.swift in Sources */,
+				5462C9C41D595B8200318AB2 /* CommandSender.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		541D0D201D57507E00F2E295 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		541D0D211D57507E00F2E295 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		541D0D231D57507E00F2E295 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = EBKJEHVQXB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		541D0D241D57507E00F2E295 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = EBKJEHVQXB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		541D0D5F1D5752B900F2E295 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = EBKJEHVQXB;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		541D0D601D5752B900F2E295 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = EBKJEHVQXB;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		541D0D161D57507E00F2E295 /* Build configuration list for PBXProject "PhysicsGameLinux" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				541D0D201D57507E00F2E295 /* Debug */,
+				541D0D211D57507E00F2E295 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		541D0D221D57507E00F2E295 /* Build configuration list for PBXNativeTarget "PhysicsGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				541D0D231D57507E00F2E295 /* Debug */,
+				541D0D241D57507E00F2E295 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		541D0D5E1D5752B900F2E295 /* Build configuration list for PBXLegacyTarget "DrawingServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				541D0D5F1D5752B900F2E295 /* Debug */,
+				541D0D601D5752B900F2E295 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 541D0D131D57507E00F2E295 /* Project object */;
+}
