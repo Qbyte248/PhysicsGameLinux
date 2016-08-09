@@ -34,14 +34,22 @@ final class Item {
 		get { return physics.body }
 		set { physics.body = newValue }
 	}
+	
+	var itemCollisionHandler: (Item) -> ()
+	var blockCollisionHandler: (Block) -> ()
 
 	// MARK: - init
 	init(position: Point,
 	     interacts: Bool = true,
-	     texture: Texture = Texture()) {
+	     texture: Texture = Texture(),
+	     itemCollisionHandler: (Item) -> () = { _ in },
+		 blockCollisionHandler: (Block) -> () = { _ in }) {
 
 		self.texture = texture
 		self.interacts = interacts
+		
+		self.itemCollisionHandler = itemCollisionHandler
+		self.blockCollisionHandler = blockCollisionHandler
 
 		physics = (PhysicsBody(position: position, size: Size(0, 0), mass: 1),
 		               Point(x: 0, y: 0))
@@ -68,12 +76,16 @@ final class Item {
 
 	func interact(_ item: Item) {
 		if interacts {
-			self.physics.body.interact(item.physics.body, now: false)
+			if self.physics.body.interact(item.physics.body) {
+				itemCollisionHandler(item)
+			}
 		}
 	}
 	func interact(_ block: Block) {
 		if interacts {
-			self.physics.body.interact(block.physicsBody)
+			if self.physics.body.interact(block.physicsBody) {
+				blockCollisionHandler(block)
+			}
 		}
 	}
 

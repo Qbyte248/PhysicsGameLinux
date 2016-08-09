@@ -37,9 +37,9 @@ struct PhysicsBody {
 		Rectangle(origin: Vector2D(position.x, position.y), size: size).draw()
 	}*/
 	
-	mutating func interact(_ body: PhysicsBody, now: Bool = false) {
+	mutating func interact(_ body: PhysicsBody, now: Bool = false) -> Bool {
 		guard let contactSide = self.contactSideTo(body, now: now) else {
-			return
+			return false
 		}
 		
 		let force = contactSide.depth * 10
@@ -68,6 +68,8 @@ struct PhysicsBody {
 			self.velocity.y = 0
 			self.force.x -= self.velocity.x * friction
 		}
+		
+		return true
 	}
 	
 	mutating func update(time: Double, forceField: (Point) -> Vector2D) {

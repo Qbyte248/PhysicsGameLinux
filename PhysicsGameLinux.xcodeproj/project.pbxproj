@@ -260,10 +260,10 @@
 		5462C9931D595B5600318AB2 /* SwiftFolder */ = {
 			isa = PBXGroup;
 			children = (
+				5462C9AD1D595B5600318AB2 /* World */,
 				5462C9941D595B5600318AB2 /* Drawing */,
 				5462C99B1D595B5600318AB2 /* Helper */,
 				5462C9AB1D595B5600318AB2 /* SwiftJavaWrapper */,
-				5462C9AD1D595B5600318AB2 /* World */,
 			);
 			path = SwiftFolder;
 			sourceTree = "<group>";
